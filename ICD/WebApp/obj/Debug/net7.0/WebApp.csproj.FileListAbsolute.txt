@@ -1,7 +1,6 @@
 /Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/appsettings.Development.json
 /Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/appsettings.json
 /Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/WebApp.staticwebassets.runtime.json
-/Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/app.db
 /Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/WebApp
 /Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/WebApp.deps.json
 /Users/truve/icd0021-22-23-s/ICD/WebApp/bin/Debug/net7.0/WebApp.runtimeconfig.json

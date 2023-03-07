@@ -9,7 +9,8 @@ public class ApplicationDbContext : IdentityDbContext
 {
     public DbSet<Event> Events { get; set; } = null!;
     public DbSet<Resource> Resources { get; set; } = null!;
-
+    public DbSet<Home> Homes { get; set; } = null!;
+    public DbSet<HomeResource> HomeResources { get; set; } = null!;
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options)
     {
@@ -17,12 +18,13 @@ public class ApplicationDbContext : IdentityDbContext
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Event>().Ignore(e => e.Resource );
-        modelBuilder.Entity<Resource>().Ignore(e => e.Events );
-        modelBuilder.Entity<Resource>().Ignore(e => e.HomeResource );
-        modelBuilder.Entity<IdentityUserLogin<string>>().HasNoKey();
-        modelBuilder.Entity<IdentityUserRole<string>>().HasNoKey();
-        modelBuilder.Entity<IdentityUserToken<string>>().HasNoKey();
+         modelBuilder.Entity<Event>().Ignore(e => e.Resource );
+         modelBuilder.Entity<Resource>().Ignore(e => e.Events );
+         modelBuilder.Entity<Resource>().Ignore(e => e.HomeResources );
+         modelBuilder.Entity<IdentityUserLogin<string>>().HasNoKey();
+         modelBuilder.Entity<IdentityUserRole<string>>().HasNoKey();
+         modelBuilder.Entity<IdentityUserToken<string>>().HasNoKey();
+
         
             //modelBuilder.Entity<Event>()
             //.Resource(s => s.EventId)
